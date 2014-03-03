@@ -12,13 +12,13 @@ CC = gcc
 OTHER_HEADERS = ../../mjpg_streamer.h ../../utils.h ../output.h ../input.h
 
 CFLAGS += -O1 -DLINUX -D_GNU_SOURCE -Wall -shared -fPIC
-CFLAGS += -I/root/ARM/include
+CFLAGS += -I ~/ARM/include
 
 #CFLAGS += -g
 #CFLAGS += -DDEBUG
 
 ifeq ($(USE_LIBV4L2),true)
-LFLAGS += -L/root/ARM/lib -lv4l2 -lv4lconvert -ljpeg
+LFLAGS += -L ~/ARM/lib -lv4l2 -lv4lconvert -ljpeg
 CFLAGS += -DUSE_LIBV4L2
 endif
 
