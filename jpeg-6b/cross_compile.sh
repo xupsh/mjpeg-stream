@@ -1,6 +1,6 @@
-make distclean
 ./configure --prefix=~/ARM \
-	--host=arm-xilinx-linux-gnueabi \
+	CC=arm-xilinx-linux-gnueabi-gcc \
+	--host=arm-xilinx-linux-gnueabi- \
 	--enable-shared \
 	--enable-static
 make all install
