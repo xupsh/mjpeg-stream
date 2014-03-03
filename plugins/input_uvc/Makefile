@@ -23,8 +23,6 @@ CFLAGS += -DUSE_LIBV4L2
 endif
 
 
-LFLAGS += -ljpeg
-
 all: input_uvc.so
 
 clean:
