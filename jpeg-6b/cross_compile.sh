@@ -4,3 +4,4 @@
 	--enable-shared \
 	--enable-static
 make all install
+make distclean
